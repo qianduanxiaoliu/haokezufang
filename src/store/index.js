@@ -6,13 +6,22 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    token: ''
+    token: '',
+    currentCity: { // 当前城市
+      label: '广州',
+      pinyin: 'guangzhou',
+      short: 'gz',
+      value: 'AREA|e4940177-c04c-383d'
+    }
   },
   getters: {
   },
   mutations: {
     setToken (state, payload) {
       state.token = payload
+    },
+    setCurrentCity (state, payload) {
+      state.currentCity = payload
     }
   },
   actions: {

@@ -37,6 +37,7 @@
 <script>
 import { ToLogin } from '@/api/user'
 export default {
+  name: 'Login',
   created () { },
   data () {
     return {

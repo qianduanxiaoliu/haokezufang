@@ -2,7 +2,9 @@
   <div>
     <div class="content">
       <!-- 二级路由 -->
-      <router-view></router-view>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </div>
     <!-- 底部tabbar栏 -->
     <van-tabbar route>
@@ -22,6 +24,7 @@
 
 <script>
 export default {
+  name: 'Layout',
   created () { },
   data () {
     return {}

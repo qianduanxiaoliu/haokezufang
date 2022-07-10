@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="my">
     <div class="top">
       <!-- 已登录 -->
       <div class="login" v-if="$store.state.token">
@@ -60,6 +60,7 @@
 <script>
 import { getUserInfo } from '@/api/user'
 export default {
+  name: 'My',
   async created () {
     try {
       const res = await getUserInfo()
@@ -92,6 +93,9 @@ export default {
 </script>
 
 <style scoped lang='less'>
+.my {
+  background-color: #fff;
+}
 // 顶部
 .top {
   width: 100%;

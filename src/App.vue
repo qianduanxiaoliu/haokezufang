@@ -1,7 +1,9 @@
 <template>
   <div>
     <!-- 一级路由 -->
-    <router-view></router-view>
+    <keep-alive exclude="HousingDetails">
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
