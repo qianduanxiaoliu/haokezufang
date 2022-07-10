@@ -42,7 +42,7 @@
     <div class="center">
       <van-grid :column-num="3" :border="false">
         <van-grid-item icon="photo-o" text="我的收藏" />
-        <van-grid-item icon="photo-o" text="我的出租" />
+        <van-grid-item icon="photo-o" to="MyHouse" text="我的出租" />
         <van-grid-item icon="photo-o" text="看房记录" />
         <van-grid-item icon="photo-o" text="成为房主" />
         <van-grid-item icon="photo-o" text="个人资料" />

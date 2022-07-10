@@ -21,3 +21,13 @@ export const getUserInfo = () => {
     url: 'user'
   })
 }
+
+/**
+ *查看一发布房源
+ * @returns
+ */
+export const getMyHouse = () => {
+  return request({
+    url: '/user/houses'
+  })
+}

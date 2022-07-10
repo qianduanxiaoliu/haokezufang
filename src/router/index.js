@@ -10,6 +10,7 @@ const City = () => import('@/views/City')
 const HousingDetails = () => import('@/views/HousingDetails')
 const Map = () => import('@/views/Map')
 const Issue = () => import('@/views/Issue')
+const MyHouse = () => import('@/views/MyHouse')
 Vue.use(VueRouter)
 
 const routes = [
@@ -32,7 +33,8 @@ const routes = [
     name: 'HousingDetails'
   },
   { path: '/map', component: Map, name: 'Map' },
-  { path: '/issue', component: Issue, name: 'Issue' }
+  { path: '/issue', component: Issue, name: 'Issue' },
+  { path: '/myhouse', component: MyHouse, name: 'MyHouse' }
 ]
 
 const router = new VueRouter({
